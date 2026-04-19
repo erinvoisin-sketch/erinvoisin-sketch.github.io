@@ -20,8 +20,8 @@ $.getJSON(weatherAlertsUrl, function(data) {
   L.geoJSON(data, {
     // Color all alert polygons orange, but color Severe polygons red
     style: function(feature){
-      var alertColor = 'violet';
-      if (feature.properties.severity === 'Severe') alertColor = 'chartreuse';
+      var alertColor = 'pink';
+      if (feature.properties.severity === 'Severe') alertColor = 'black';
       return { color: alertColor }
     },
     // Add a popup on each feature showing the NWS alert headline
